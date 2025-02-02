@@ -1,3 +1,36 @@
 - A chrome extension is a small softaware program that customizes the browsing experience
 - It consists of HTML, CSS, JavaScript and a manifest.json
 
+
+HOW CHROME EXTENSIONS WORK
+============================
+- A Chrome extension consists of several components that work together:
+
+    1. Manifest File (manifest.json) – The blueprint of the extension, defining its name, permissions, and main files.
+
+    2. Popup (Optional) – A small UI that appears when clicking the extension’s icon.
+
+    3. Content Scripts – JavaScript that runs on web pages to modify content dynamically.
+
+    4. Background Scripts – Code that runs in the background, handling events and automation.
+
+    5. Options Page (Optional) – A settings page where users can configure the extension.
+
+
+BASIC ARCHITECTURE OF A CHROME EXTENSION
+=========================================
+my-extension/
+│── manifest.json       # Main configuration file
+│── popup.html          # UI for extension
+│── popup.js            # Logic for popup
+│── background.js       # Runs in the background
+│── content.js          # Injected into web pages
+└── icons/              # Folder for extension icons
+
+
+PREREQUISITTES
+==============
+Before we start building, you should be familiar with:
+✅ HTML & CSS – For creating the UI of the extension.
+✅ JavaScript – For adding interactivity and functionality.
+✅ Basic JSON – For defining the extension’s configuration.
