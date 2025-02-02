@@ -1,0 +1,101 @@
+SETTING UP YOUR CHROME EXTESNION
+==================================
+
+1. Create a Project Folder
+=============================
+- Choose a location on your computer and create a new folder.
+- Name the folder something like my-first-extension.
+
+
+2. Create the Manifest File (manifest.json)
+============================================
+- The manifest.json file is the core configuration file for your extension. It tells Chrome what your extension does and how it should behave.
+
+    Steps to Create manifest.json
+    =============================
+    1) Open your project folder (my-first-extension).
+
+    2) Inside the folder, create a new file called manifest.json.
+
+    3) Open manifest.json in a text editor (e.g., VS Code, Notepad++).
+
+    4) Add the following JSON code:
+
+        {
+            "manifest_version": 3,
+            "name": "My First Extension",
+            "version": "1.0",
+            "description": "A simple Chrome extension","action": {
+                "default_popup": "popup.html"
+                },
+            "permissions": []
+        }
+
+    EXPLANATION of manifest.json:
+    =============================
+    - "manifest_version": 3 → This specifies that we’re using Manifest v3, the latest version.
+
+    - "name": "My First Extension" → The name of your extension.
+
+    - "version": "1.0" → The current version of the extension.
+
+    - "description" → A short description of what your extension does.
+
+    - "action" → Defines the popup window that appears when the extension icon is clicked.
+
+    - "permissions" → A list of permissions the extension needs (currently empty).
+
+
+
+
+3. Create the Popup UI (popup.html)
+===================================
+- Since our extension includes a popup, let’s create the user interface.
+
+    
+    Steps to Create popup.html
+    ==========================
+    1) Inside your project folder, create a new file called popup.html.
+    
+    2) Open popup.html in your text editor.
+    
+    3) Add the following HTML code:
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My Extension</title>
+            
+            <style>
+                body {
+                    width: 200px;
+                    height: 150px;
+                    text-align: center;
+                    font-family: Arial, sans-serif;
+                    }
+                    
+                button {
+                    padding: 10px;
+                    margin-top: 20px;
+                    }
+                    
+            </style>
+        </head>
+        
+        <body>
+            <h3>Hello, Chrome!</h3>
+            <button id="click-me">Click Me</button>
+            <script src="popup.js"></script>
+        </body>
+        </html>
+
+
+        EXPLANATION of popup.html:
+        ==========================
+        - Basic HTML structure with a title, heading (h3), and a button.
+        - Inline CSS to style the popup.
+        - Button with an ID (click-me) that will trigger an action.
+        - Includes a script (popup.js) to handle button clicks.
+
