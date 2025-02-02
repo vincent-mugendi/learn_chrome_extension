@@ -1,0 +1,3 @@
+- A chrome extension is a small softaware program that customizes the browsing experience
+- It consists of HTML, CSS, JavaScript and a manifest.json
+
