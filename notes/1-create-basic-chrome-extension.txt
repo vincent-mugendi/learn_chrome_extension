@@ -99,3 +99,25 @@ SETTING UP YOUR CHROME EXTESNION
         - Button with an ID (click-me) that will trigger an action.
         - Includes a script (popup.js) to handle button clicks.
 
+
+4. Add JavaScript Logic (popup.js)
+==================================
+- Now, let’s make the button interactive.
+
+    Steps to Create popup.js
+    ========================
+    1. Inside your project folder, create a new file called popup.js.
+
+    2. Open popup.js in your text editor.
+
+    3. Add the following JavaScript code:
+
+        document.getElementById("click-me").addEventListener("click", () => {
+            alert("Button Clicked!");
+        });
+
+
+    Explanation of popup.js
+    ========================
+    - Finds the button with the ID click-me.
+    - Adds an event listener that shows an alert when the button is clicked.
